@@ -30,5 +30,10 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
+
+# sw stuff
+public/sw.js
+public/workbox-*.js
+
 # vercel
 .vercel

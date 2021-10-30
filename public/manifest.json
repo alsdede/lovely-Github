@@ -1,0 +1,16 @@
+{
+  "name": "Lovelystay Challenge",
+  "short_name": "Lovelystay Challenge",
+  "icons": [
+    {
+      "src": "/img/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#06092B",
+  "description": "Lovelystay Challenge",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#06092B"
+}
