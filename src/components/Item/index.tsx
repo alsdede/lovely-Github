@@ -1,7 +1,7 @@
 import * as S from './styles'
 
 export type ItemProps = {
-  img: string
+  img?: string
   title: string
   username: string
 }
