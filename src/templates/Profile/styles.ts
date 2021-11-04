@@ -1,3 +1,15 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-export const Wrapper = styled.div``
+export const Header = styled.div`
+  font-size: 2.5rem;
+  text-decoration: none;
+  > span {
+    cursor: pointer;
+  }
+`
+export const BackButton = styled.a`
+  ${({ theme }) => css`
+    text-decoration: none;
+    color: ${theme.colors.white};
+  `}
+`

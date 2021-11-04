@@ -1,11 +1,11 @@
-import { useEffect, useState, useCallback } from 'react'
+import { useState, useCallback } from 'react'
 import Link from 'next/link'
 import { Container } from 'components/Container'
 import TextField from 'components/TextField'
 import Button from 'components/Button'
 import Item from 'components/Item'
 import { Search } from '@styled-icons/boxicons-regular/Search'
-import Img from '../../../public/img/icon-512.png'
+
 import * as S from './styles'
 import api from 'services/api'
 
@@ -32,7 +32,7 @@ const Home = () => {
     {} as UsersProps
   )
   const [values, setValues] = useState({ search: '' })
-  const [formError, setFormError] = useState('')
+  //const [formError, setFormError] = useState({})
   const [fieldError, setFieldError] = useState<FieldErrors>({})
 
   const handleInput = (field: string, value: string) => {
@@ -44,6 +44,8 @@ const Home = () => {
       try {
         event.preventDefault()
         setFieldError({})
+
+        setSearchedRepository({} as UsersProps)
         const response = await api.get(`/users/${values.search}`)
         const {
           id,
@@ -67,9 +69,6 @@ const Home = () => {
     [values.search]
   )
 
-  console.log('values', values.search)
-  console.log('term', searchedRepository)
-
   return (
     <section>
       <Container>
@@ -89,7 +88,7 @@ const Home = () => {
             </Button>
           </S.ButtonBox>
         </S.Form>
-        {searchedRepository.username && (
+        {searchedRepository.username && values.search !== '' && (
           <Link href={`/profile/${searchedRepository.username}`} passHref>
             <S.ItemBox>
               <Item
