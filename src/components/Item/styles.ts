@@ -22,15 +22,18 @@ export const ImageBox = styled.div`
     margin-right: 1.2rem;
     width: 5.6rem;
     height: 5.6rem;
+    border-radius: ${theme.border.radius};
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: ${theme.border.radius};
     }
     ${media.greaterThan('medium')`
       margin-right: ${theme.spacings.xsmall};
       width: 10rem;
       height: 10rem;
+      border-radius: ${theme.border.radius};
     `};
   `}
 `

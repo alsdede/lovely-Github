@@ -5,7 +5,7 @@ export type ItemProps = {
   img: string
   title: string
   username: string
-  total: string
+  total: number
 }
 
 const ProfileCard = ({ img, title, username, total }: ItemProps) => {

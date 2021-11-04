@@ -9,7 +9,7 @@ const RepositoryItem = ({ title, description }: ItemProps) => (
   <S.Wrapper>
     <S.ItemContent>
       <S.Title>{title}</S.Title>
-      <S.Description>repository description</S.Description>
+      <S.Description>{description}</S.Description>
     </S.ItemContent>
   </S.Wrapper>
 )
