@@ -32,6 +32,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 
 ## ABOUT THE PROJECT
+  ## Responsive Layout
  ### NextJS
       NextJS was chosen for its ease of integration with other frameworks.
     - Easy configuration with CSS-in-JS (Styled components)
@@ -46,6 +47,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
     2. Templates (Pages)
     3. Pages
     4. Service integration
+
 
 
 
