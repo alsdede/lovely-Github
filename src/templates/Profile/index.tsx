@@ -1,6 +1,5 @@
-import { useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+
 import { Container } from 'components/Container'
 
 import RepositoryItem from 'components/RepositoryItem'
@@ -9,10 +8,6 @@ import * as S from './styles'
 
 import ProfileCard from 'components/ProfileCard'
 
-type RepositoriesPropsResponse = {
-  name: string
-  description: string
-}
 export type RepositoriesProps = {
   name: string
   description: string
@@ -32,7 +27,6 @@ const Profile = ({
   repositoriesTotal,
   repositories
 }: ProfileProps) => {
-  console.log(repositories)
   return (
     <section>
       <Container>

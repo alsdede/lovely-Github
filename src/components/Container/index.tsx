@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import BackgroundImage from 'assets/icon-512.png'
+
 export const Container = styled.div`
   ${({ theme }) => css`
     max-width: ${theme.grid.container};

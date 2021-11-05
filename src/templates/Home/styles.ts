@@ -22,7 +22,7 @@ export const ItemBox = styled.div`
   text-decoration: none;
   cursor: pointer;
 `
-export const Title = styled.h3`
+export const Title = styled.h2`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xxlarge};
     line-height: ${theme.font.sizes.xxlarge};

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { BookBookmark } from '@styled-icons/boxicons-regular/BookBookmark'
 import * as S from './styles'
 
@@ -13,7 +14,7 @@ const ProfileCard = ({ img, title, username, total }: ItemProps) => {
     <S.Wrapper>
       <S.ItemContent>
         <S.ImageBox>
-          <img src={img} alt={title} />
+          <img src={img} alt={title} aria-label={title} />
         </S.ImageBox>
 
         <S.Content>
@@ -25,7 +26,7 @@ const ProfileCard = ({ img, title, username, total }: ItemProps) => {
               <S.Tag>{username}</S.Tag>
             </S.TagBox>
             <S.TagBox>
-              <S.Tag>
+              <S.Tag itemID="tag">
                 <BookBookmark />
                 {total} repositories
               </S.Tag>

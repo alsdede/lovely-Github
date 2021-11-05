@@ -38,13 +38,11 @@ const Home = () => {
   const handleInput = (field: string, value: string) => {
     setValues((s) => ({ ...s, [field]: value }))
   }
-
   const handleSearch = useCallback(
     async (event: React.FormEvent) => {
       try {
         event.preventDefault()
         setFieldError({})
-
         setSearchedRepository({} as UsersProps)
         const response = await api.get(`/users/${values.search}`)
         const {
@@ -54,7 +52,7 @@ const Home = () => {
           name,
           public_repos
         }: UsersPropsResponse = response.data
-        console.log(response.data)
+        console.log('RESPONSE', response.data)
         setSearchedRepository({
           id,
           avatar: avatar_url,
@@ -88,7 +86,7 @@ const Home = () => {
             </Button>
           </S.ButtonBox>
         </S.Form>
-        {searchedRepository.username && values.search !== '' && (
+        {searchedRepository.username && (
           <Link href={`/profile/${searchedRepository.username}`} passHref>
             <S.ItemBox>
               <Item

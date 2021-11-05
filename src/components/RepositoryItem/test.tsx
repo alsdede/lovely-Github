@@ -9,7 +9,7 @@ const props = {
   description: 'repository description'
 }
 
-describe('<GameItem />', () => {
+describe('<RepositoryItem />', () => {
   it('should render the item', () => {
     renderWithTheme(<RepositoryItem {...props} />)
 

@@ -92,8 +92,6 @@ describe('<TextField />', () => {
     )
 
     expect(screen.getByText('Error message')).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
   })
 
   it('Is accessible by tab', () => {

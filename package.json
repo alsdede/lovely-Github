@@ -19,13 +19,13 @@
     "styled-components": "^5.3.3",
     "styled-icons": "^10.45.0",
     "styled-media-query": "^2.1.2"
-
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.15.0",
     "@testing-library/dom": "^8.10.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.2",
+    "@testing-library/react-hooks": "^7.0.2",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.6",

@@ -1,7 +1,8 @@
+import Image from 'next/image'
 import * as S from './styles'
 
 export type ItemProps = {
-  img?: string
+  img: string
   title: string
   username: string
 }
@@ -10,7 +11,7 @@ const Item = ({ img, title, username }: ItemProps) => (
   <S.Wrapper>
     <S.ItemContent>
       <S.ImageBox>
-        <img src={img} alt={title} />
+        <img src={img} alt={title} aria-label={title} />
       </S.ImageBox>
 
       <S.Content>

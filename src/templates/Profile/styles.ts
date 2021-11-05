@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const Header = styled.div`
+export const Header = styled.header`
   font-size: 2.5rem;
   text-decoration: none;
   > span {

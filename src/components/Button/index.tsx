@@ -5,7 +5,7 @@ type ButtonTypes = ButtonHTMLAttributes<HTMLButtonElement>
 
 export type ButtonProps = {
   children?: React.ReactNode
-  size?: 'small' | 'medium' | 'large' | 'fullWidth'
+  size?: 'small' | 'medium' | 'large'
 } & ButtonTypes
 
 const Button = ({ children, size = 'medium', ...props }: ButtonProps) => (
