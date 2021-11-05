@@ -6,11 +6,17 @@ https://lovelystay-challenge-j009npfn1-alsdede.vercel.app/
 First, run the development server:
 
 ```bash
+#run yarn to download dependencies
+yarn
+
+# next
+
 npm run dev
 # or
 yarn dev
 
 ## test
+
 yarn test
 # or
 npm run test
@@ -19,7 +25,7 @@ npm run test
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
-## Frameworks
+## Frameworks / Techs
 - [NEXT.JS] (https://nextjs.org/)
 - [Styled-components] (https://styled-components.com/)
 - [Jest] (https://jestjs.io/)
